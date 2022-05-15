@@ -1,5 +1,5 @@
 # RALC - Russia Award Local Cluster
-## Russian
+## RUS
 Приложение показывающее споты по незакрытым слотам национальной дипломной радиолюбительской программы 
 "Россия и Россия на всех диапазонах" на Hamlog - [https://hamlog.online/srr/russia/](https://hamlog.online/srr/russia/)
 
@@ -10,9 +10,18 @@
 
 Документация: /help/
 
-## EXE build
+## Сборка EXE
 Сборка в один exe файл производится файлом build.cmd через pyinstaller с использование upx.
 
-## English
+## ENG
+Application for CC telnet clusters spots filtering based on ["National award RUSSIA"](https://hamlog.online/srr/russia/) 
+completing statistic.
 
-Application for CC telnet clusters spots filtering based on ["National award RUSSIA"](https://hamlog.online/srr/russia/) completing statistic.
+## Very quick start
+* Get your ID, last 4 digits of URL from page with you personal statistic of ["National award RUSSIA"](https://hamlog.online/srr/russia/)
+and set this ID and set this ID to **last field of 'Settings' -> 'Hamlog URL'**
+* Set your callsign to **'Settings' -> 'Callsign'** 
+* Push **Start** button on **'Spots'** page
+
+## Build EXE
+Start build.cmd to build one exe file
