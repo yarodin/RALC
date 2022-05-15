@@ -73,7 +73,7 @@ layout_settings = [
 tabgrp = [[sg.TabGroup([[sg.Tab('Spots', layout_spots, key='-SPOTS-'),
                          sg.Tab('Settings', layout_settings, key='-SETTINGS-')]],
                        tab_location='topleft', change_submits=True, key='tabgrp')]]
-window = sg.Window('Russia Award Local Cluster v0.1 by r1bet',
+window = sg.Window('Russia Award Local Cluster v1.0 by R1BET',
                    tabgrp, font=font, icon=icon_image).finalize()
 
 hamlogdb = dict()
