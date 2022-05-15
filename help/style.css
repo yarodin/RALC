@@ -1,0 +1,51 @@
+body {
+  font-family: Verdana;
+  font-size: 11pt; 
+}
+h2.title{
+  font-size: 14pt; 
+  font-family: Verdana;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+h2 {
+  font-size: 14pt; 
+  font-family: Verdana;
+  font-weight: bold;
+}
+p.author {
+	font-style: italic;
+}
+.big {
+  font-size: 14pt; 
+  font-family: Verdana;	
+}
+.huge {
+  font-size: 18pt; 
+  font-family: Verdana;	
+}
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+td {
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+}
+table.motto {
+	border: 2px solid black;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+table.motto td{
+	text-align: justify;
+}
+table.transparent {
+	border: 0px;
+	margin: 0px;
+}
+table.transparent td{
+	border: 0px;
+    padding: 0 10px 10px 0; 
+}
