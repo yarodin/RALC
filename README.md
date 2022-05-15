@@ -11,7 +11,7 @@
 Документация: /help/
 
 ## Сборка EXE
-Сборка в один exe файл производится файлом build.cmd через pyinstaller с использование upx.
+Сборка в один exe файл производится запусклм build.cmd. Используются pyinstaller с upx.
 
 ## ENG
 Application for CC telnet clusters spots filtering based on ["National award RUSSIA"](https://hamlog.online/srr/russia/) 
