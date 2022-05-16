@@ -21,7 +21,7 @@ table_headers = ['Time', 'Freq', 'DX       ', 'H', 'Comment', '    Spotter']
 table_data = []
 
 root = os.path.dirname(__file__)
-icon_image = os.path.join(root, 'icons\\spider.ico')
+icon_image = os.path.join(root, 'icons\\radar.ico')
 
 layout_spots = [[sg.Table(table_data, headings=table_headers, display_row_numbers=False,
                           col_widths=[6, 8, 12, 3, 22, 10], justification='c', auto_size_columns=False,
@@ -390,8 +390,9 @@ while True:  # Event Loop
     elif event[0] == '-SPOTTABLE-':
         row, column = event[2]
         if row == -1 and column == 3:
+            x, y = window.CurrentLocation()
             sg.Popup('H - Hamlog user', auto_close=True, any_key_closes=True, no_titlebar=True,
-                     button_type=5, relative_location=(60, -230), non_blocking=True, modal=False, font=font)
+                     button_type=5, relative_location=(x-930, y-675), non_blocking=True, modal=False, font=font)
     else:
         if '-THREAD-spot-' in values:
             window.Element('-SPOTTABLE-').Widget.column('#2', anchor='e')
