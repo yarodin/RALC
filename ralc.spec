@@ -7,7 +7,7 @@ block_cipher = None
 a = Analysis(['ralc.py'],
              pathex=[],
              binaries=[],
-             datas=[('icons\\spider.ico','icons'),
+             datas=[('icons\\radar.ico','icons'),
 						('help\\index.html','help'),
 						('help\\style.css','help'),
 						('help\\files\\hamlog1.jpg','help\\files'),
@@ -50,4 +50,4 @@ exe = EXE(pyz,
           target_arch=None,
           codesign_identity=None,
           entitlements_file=None,
-		  icon='icons\\spider.ico')
+		  icon='icons\\radar.ico')
