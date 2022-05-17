@@ -24,12 +24,12 @@ root = os.path.dirname(__file__)
 icon_image = os.path.join(root, 'icons\\radar.ico')
 
 layout_spots = [[sg.Table(table_data, headings=table_headers, display_row_numbers=False,
-                          col_widths=[6, 8, 12, 3, 22, 10], justification='c', auto_size_columns=False,
+                          col_widths=[6, 8, 12, 3, 24, 12], justification='c', auto_size_columns=False,
                           alternating_row_color='ghost white', select_mode=sg.TABLE_SELECT_MODE_NONE, num_rows=20,
                           enable_events=True, enable_click_events=True, key='-SPOTTABLE-')],
-                [sg.Text('current status:', justification='r', pad=(0, 0), size=56),
+                [sg.Text('current status:', justification='r', pad=(0, 0), size=61),
                  sg.Text('offline', pad=(0, 0), text_color='red', key='-CURRENT_STATUS-')],
-                [sg.Multiline(size=(68, 4), autoscroll=True, reroute_stdout=True,
+                [sg.Multiline(size=(73, 4), autoscroll=True, reroute_stdout=True,
                               write_only=True, reroute_cprint=True)],
                 [sg.Button(button_text='Start', tooltip='Start spot collecting'),
                  sg.Button(button_text='Stop', tooltip='Stop spot collecting'),
@@ -73,7 +73,7 @@ layout_settings = [
 tabgrp = [[sg.TabGroup([[sg.Tab('Spots', layout_spots, key='-SPOTS-'),
                          sg.Tab('Settings', layout_settings, key='-SETTINGS-')]],
                        tab_location='topleft', change_submits=True, key='tabgrp')]]
-window = sg.Window('Russia Award Local Cluster v1.0 by R1BET',
+window = sg.Window('Russia Award Local Cluster v1.0.0 by R1BET',
                    tabgrp, font=font, icon=icon_image).finalize()
 
 hamlogdb = dict()

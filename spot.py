@@ -21,7 +21,7 @@ def decode_char_spot(raw_string):
         raise ValueError
 
     data['dx'] = re.sub('[^A-Za-z0-9/]+', '', raw_string[26:38]).strip()
-    data['comment'] = re.sub('[^\sA-Za-z0-9.,;#+\-!?$()@/]+', ' ', raw_string[39:69])
+    data['comment'] = re.sub('[^\sA-Za-z0-9.,;#+\-!?$()@/]+', ' ', raw_string[39:69]).strip()
     data['time'] = datetime.now().replace(tzinfo=pytz.UTC)
 
     return data
