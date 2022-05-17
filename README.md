@@ -12,6 +12,7 @@
 
 ## Сборка EXE
 Сборка в один exe файл производится запуском build.cmd. Для сборки используются pyinstaller с upx.
+venv должен находится в директории с build.cmd
 
 ## ENG
 Application for CC telnet clusters spots filtering based on ["National award RUSSIA"](https://hamlog.online/srr/russia/) 
@@ -24,4 +25,5 @@ and set this ID and set this ID to **last field of 'Settings' -> 'Hamlog URL'**
 * Push **Start** button on **'Spots'** page
 
 ## Build EXE
-Start build.cmd to build one exe file
+Start build.cmd to build one exe file.
+venv should be at the same directory with build.cmd
