@@ -1,0 +1,17 @@
+altgraph>=0.17.2
+beautifulsoup4>=4.11.1
+certifi>=2021.10.8
+charset-normalizer>=2.0.12
+future>=0.18.2
+idna>=3.3
+lxml>=4.8.0
+msgpack>=1.0.3
+pefile>=2021.9.3
+pyinstaller>=5.0.1
+pyinstaller-hooks-contrib>=2022.5
+PySimpleGUI>=4.60.0
+pytz>=2022.1
+pywin32-ctypes>=0.2.0
+requests>=2.27.1
+soupsieve>=2.3.2.post1
+urllib3>=1.26.9
