@@ -15,7 +15,10 @@ import hamlog
 import spot
 
 # GUI Window Layout
-sg.theme('DefaultNoMoreNagging')
+sg.LOOK_AND_FEEL_TABLE['DefaultNoMoreNaggingMOD'] = sg.LOOK_AND_FEEL_TABLE['DefaultNoMoreNagging'].copy()
+sg.LOOK_AND_FEEL_TABLE['DefaultNoMoreNaggingMOD']['BUTTON'] = ('#606060', '#f0f0f0')
+sg.theme('DefaultNoMoreNaggingMOD')
+
 font = 'Arial, 11'
 table_headers = ['Time', 'Freq', 'DX       ', 'H', 'Comment', '    Spotter']
 table_data = []
@@ -31,11 +34,15 @@ layout_spots = [[sg.Table(table_data, headings=table_headers, display_row_number
                  sg.Text('offline', pad=(0, 0), text_color='red', key='-CURRENT_STATUS-')],
                 [sg.Multiline(size=(73, 4), autoscroll=True, reroute_stdout=True,
                               write_only=True, reroute_cprint=True)],
-                [sg.Button(button_text='Start', tooltip='Start spot collecting'),
-                 sg.Button(button_text='Stop', tooltip='Stop spot collecting'),
-                 sg.Button(button_text='Update', tooltip='Force update all data from hamlog'),
-                 sg.Button(button_text='Clear', tooltip='Clear spot table'),
-                 sg.Button('Exit')]]
+                [sg.Button(button_text='Start', button_color=('white', '#082567'),
+                           tooltip='Start spot collecting'),
+                 sg.Button(button_text='Stop', button_color=('white', '#082567'),
+                           tooltip='Stop spot collecting'),
+                 sg.Button(button_text='Update', button_color=('white', '#082567'),
+                           tooltip='Force update all data from hamlog'),
+                 sg.Button(button_text='Clear', button_color=('white', '#082567'),
+                           tooltip='Clear spot table'),
+                 sg.Button('Exit', button_color=('white', '#082567'))]]
 
 layout_settings = [
     [sg.Sizer(1, 5)],
@@ -67,14 +74,15 @@ layout_settings = [
     [sg.Text('Debug', size=10), sg.Checkbox('On', key='-DEBUG-', size=3, tooltip='Show additional debug info')],
     [sg.HorizontalSeparator()],
     [sg.Sizer(1, 123)],
-    [sg.Button(button_text='Load', tooltip='Load settings from ini file'),
-     sg.Button(button_text='Save', tooltip='Save settings to ini file'),
-     sg.Button(button_text='Help', tooltip='Open help')]]
+    [sg.Button(button_text='Load', button_color=('white', '#082567'), tooltip='Load settings from ini file'),
+     sg.Button(button_text='Save', button_color=('white', '#082567'), tooltip='Save settings to ini file'),
+     sg.Button(button_text='Help', button_color=('white', '#082567'), tooltip='Open help')]]
 tabgrp = [[sg.TabGroup([[sg.Tab('Spots', layout_spots, key='-SPOTS-'),
                          sg.Tab('Settings', layout_settings, key='-SETTINGS-')]],
                        tab_location='topleft', change_submits=True, key='tabgrp')]]
 window = sg.Window('Russia Award Local Cluster v1.0.0 by R1BET',
                    tabgrp, font=font, icon=icon_image).finalize()
+
 
 hamlogdb = dict()
 ctydb = dict()
