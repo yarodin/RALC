@@ -10,6 +10,13 @@
 
 Документация: /help/
 
+## Очень быстрый старт 
+* Внесите последние 4 цифры адреса страницы с вашей персональной статистикой [дипломной программы "Россия и Россия на всех диапазонах"](https://hamlog.online/srr/russia/)
+в **последнее поле опции **'Hamlog URL'** на странице **'Settings'**
+* Укажите ваш позывной в поле **'Callsign'**  на странице **'Settings' 
+* Нажмите кнопку **'Save'** на странице **'Settings'**
+* Нажмите кнопку **'Start'** на странице **'Spots'**
+
 ## Сборка EXE
 Сборка в один exe файл производится запуском build.cmd. Для сборки используются pyinstaller с upx.
 venv должен находится в директории с build.cmd
@@ -22,7 +29,8 @@ completing statistic.
 * Get your ID, last 4 digits of URL from page with you personal statistic of ["National award RUSSIA"](https://hamlog.online/srr/russia/)
 and set this ID and set this ID to **last field of 'Settings' -> 'Hamlog URL'**
 * Set your callsign to **'Settings' -> 'Callsign'** 
-* Push **Start** button on **'Spots'** page
+* Press **'Save'** button on **'Settings'** page
+* Press **'Start'** button on **'Spots'** page
 
 ## Build EXE
 Start build.cmd to build one exe file.
