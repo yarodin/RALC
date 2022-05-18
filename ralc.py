@@ -386,7 +386,7 @@ while True:  # Event Loop
         cfg = load_settings()
     elif event == 'Save':
         save_settings(values)
-        sg.Popup('Setting saved.\nRestart cluster to apply!',
+        sg.Popup('Setting saved.\nRestart cluster to apply!', button_color=('white', '#082567'),
                  keep_on_top=True, font=font, icon=icon_image)
     elif event == 'Help':
         webbrowser.open_new(root+'\\help\\index.html')
