@@ -8,7 +8,7 @@ def create(path):
     config.set('Settings', 'hl_award_url', 'https://hamlog.online/srr/russia/info.php?c=')
     config.set('Settings', 'hl_award_id', '0000')
     config.set('Settings', 'hl_verified_url', 'https://hamlog.online/api/lists/user-verified.txt')
-    config.set('Settings', 'dxcl_host', 've7cc.net')
+    config.set('Settings', 'dxcl_host', 'dxspots.com')
     config.set('Settings', 'dxcl_port', '23')
     config.set('Settings', 'mycallsign', 'R1TEST')
     config.set('Settings', 'dx_filter', 'SET/FILTER DXCTY/PASS UA,UA2,UA9')
