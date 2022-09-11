@@ -1,0 +1,4 @@
+hamlog.db
+hlusers.txt
+settings.ini
+__pycache__/*.pyc
